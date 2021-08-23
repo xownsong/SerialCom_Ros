@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/devel/setup.sh

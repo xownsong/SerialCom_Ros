@@ -1,0 +1,2 @@
+serial_com
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/install -G Unix Makefiles
