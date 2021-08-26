@@ -311,19 +311,6 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named serial_communication_node
-
-# Build rule for target.
-serial_communication_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serial_communication_node
-.PHONY : serial_communication_node
-
-# fast build rule for target.
-serial_communication_node/fast:
-	$(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/build
-.PHONY : serial_communication_node/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
 
 # Build rule for target.
@@ -400,6 +387,19 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 rosgraph_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named serial_node_decision
+
+# Build rule for target.
+serial_node_decision: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 serial_node_decision
+.PHONY : serial_node_decision
+
+# fast build rule for target.
+serial_node_decision/fast:
+	$(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/build
+.PHONY : serial_node_decision/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -516,13 +516,13 @@ help:
 	@echo "... gtest"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... serial_communication_node"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... serial_node_decision"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"

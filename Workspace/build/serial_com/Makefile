@@ -91,16 +91,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -111,6 +101,16 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -196,21 +196,6 @@ roscpp_generate_messages_eus: serial_com/CMakeFiles/roscpp_generate_messages_eus
 roscpp_generate_messages_eus/fast:
 	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/roscpp_generate_messages_eus.dir/build.make serial_com/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-serial_com/CMakeFiles/serial_communication_node.dir/rule:
-	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f CMakeFiles/Makefile2 serial_com/CMakeFiles/serial_communication_node.dir/rule
-.PHONY : serial_com/CMakeFiles/serial_communication_node.dir/rule
-
-# Convenience name for target.
-serial_communication_node: serial_com/CMakeFiles/serial_communication_node.dir/rule
-
-.PHONY : serial_communication_node
-
-# fast build rule for target.
-serial_communication_node/fast:
-	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/build
-.PHONY : serial_communication_node/fast
 
 # Convenience name for target.
 serial_com/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
@@ -301,6 +286,21 @@ rosgraph_msgs_generate_messages_lisp: serial_com/CMakeFiles/rosgraph_msgs_genera
 rosgraph_msgs_generate_messages_lisp/fast:
 	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+serial_com/CMakeFiles/serial_node_decision.dir/rule:
+	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f CMakeFiles/Makefile2 serial_com/CMakeFiles/serial_node_decision.dir/rule
+.PHONY : serial_com/CMakeFiles/serial_node_decision.dir/rule
+
+# Convenience name for target.
+serial_node_decision: serial_com/CMakeFiles/serial_node_decision.dir/rule
+
+.PHONY : serial_node_decision
+
+# fast build rule for target.
+serial_node_decision/fast:
+	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/build
+.PHONY : serial_node_decision/fast
 
 # Convenience name for target.
 serial_com/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -407,32 +407,32 @@ std_msgs_generate_messages_py/fast:
 	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/std_msgs_generate_messages_py.dir/build.make serial_com/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-src/serial_communication_node.o: src/serial_communication_node.cpp.o
+src/serial_node_decision.o: src/serial_node_decision.cpp.o
 
-.PHONY : src/serial_communication_node.o
+.PHONY : src/serial_node_decision.o
 
 # target to build an object file
-src/serial_communication_node.cpp.o:
-	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/src/serial_communication_node.cpp.o
-.PHONY : src/serial_communication_node.cpp.o
+src/serial_node_decision.cpp.o:
+	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/src/serial_node_decision.cpp.o
+.PHONY : src/serial_node_decision.cpp.o
 
-src/serial_communication_node.i: src/serial_communication_node.cpp.i
+src/serial_node_decision.i: src/serial_node_decision.cpp.i
 
-.PHONY : src/serial_communication_node.i
+.PHONY : src/serial_node_decision.i
 
 # target to preprocess a source file
-src/serial_communication_node.cpp.i:
-	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/src/serial_communication_node.cpp.i
-.PHONY : src/serial_communication_node.cpp.i
+src/serial_node_decision.cpp.i:
+	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/src/serial_node_decision.cpp.i
+.PHONY : src/serial_node_decision.cpp.i
 
-src/serial_communication_node.s: src/serial_communication_node.cpp.s
+src/serial_node_decision.s: src/serial_node_decision.cpp.s
 
-.PHONY : src/serial_communication_node.s
+.PHONY : src/serial_node_decision.s
 
 # target to generate assembly for a file
-src/serial_communication_node.cpp.s:
-	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/src/serial_communication_node.cpp.s
-.PHONY : src/serial_communication_node.cpp.s
+src/serial_node_decision.cpp.s:
+	cd /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build && $(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/src/serial_node_decision.cpp.s
+.PHONY : src/serial_node_decision.cpp.s
 
 # Help Target
 help:
@@ -443,11 +443,10 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... test"
-	@echo "... serial_communication_node"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
@@ -456,6 +455,7 @@ help:
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... serial_node_decision"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -463,9 +463,9 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... src/serial_communication_node.o"
-	@echo "... src/serial_communication_node.i"
-	@echo "... src/serial_communication_node.s"
+	@echo "... src/serial_node_decision.o"
+	@echo "... src/serial_node_decision.i"
+	@echo "... src/serial_node_decision.s"
 .PHONY : help
 
 

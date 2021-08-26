@@ -7,6 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib'
-export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/src:$ROS_PACKAGE_PATH"

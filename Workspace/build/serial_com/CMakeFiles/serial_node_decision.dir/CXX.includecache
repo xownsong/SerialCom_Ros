@@ -6,14 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/src/serial_com/src/serial_communication_node.cpp
-iostream
--
+/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/src/serial_com/src/serial_node_decision.cpp
 ros/ros.h
 -
 serial/serial.h
 -
 std_msgs/String.h
+-
+std_msgs/Bool.h
 -
 std_msgs/Empty.h
 -
@@ -688,6 +688,22 @@ stddef.h
 stdio.h
 -
 stdint.h
+-
+
+/opt/ros/melodic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/melodic/include/std_msgs/Empty.h

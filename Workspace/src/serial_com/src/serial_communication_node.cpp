@@ -15,7 +15,7 @@
  *  }
  * </pre>
  */
-
+#include <iostream>
 #include <ros/ros.h>
 #include <serial/serial.h>
 #include <std_msgs/String.h>
@@ -59,13 +59,26 @@ int main (int argc, char** argv){
     while(ros::ok()){
 
         ros::spinOnce();
+	unsigned char abc[256];
 
         if(ser.available()){
+	    size_t length = 0;
             ROS_INFO_STREAM("Reading from serial port");
-            std_msgs::String result;
-            result.data = ser.read(ser.available());
-            ROS_INFO_STREAM("Read: " << result.data);
-            read_pub.publish(result);
+	    length = ser.read(abc, ser.available());
+	    abc[length] = '\n';
+//	    std_msgs::String str = abc;
+  	    //std_msgs::String str;
+            //std_msgs::String resdult;
+            //result.data = ser.read(ser.available());
+            std::cout<<  "Read: " << abc[0]<<"  " << abc[1]<<"  "  << abc[2]<<"\r\n  " ;
+//ROS_INFO_STREAM();
+           // ROS_INFO_STREAM("Read: " << str);
+           // ROS_INFO_STREAM("Read: " << str);
+
+  //          ROS_INFO_STREAM("Read: " << str);
+	    //for (int i = 0; i<length; ++i) 
+            //    ROS_INFO_STREAM(i, abc[i])
+          //  read_pub.publish(abc);
         }
         loop_rate.sleep();
 

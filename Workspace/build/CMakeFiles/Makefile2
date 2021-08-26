@@ -408,20 +408,20 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory serial_com
 
 # Convenience name for "all" pass in the directory.
-serial_com/all: serial_com/CMakeFiles/serial_communication_node.dir/all
+serial_com/all: serial_com/CMakeFiles/serial_node_decision.dir/all
 
 .PHONY : serial_com/all
 
 # Convenience name for "clean" pass in the directory.
 serial_com/clean: serial_com/CMakeFiles/roscpp_generate_messages_py.dir/clean
 serial_com/clean: serial_com/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-serial_com/clean: serial_com/CMakeFiles/serial_communication_node.dir/clean
 serial_com/clean: serial_com/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 serial_com/clean: serial_com/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 serial_com/clean: serial_com/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 serial_com/clean: serial_com/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 serial_com/clean: serial_com/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 serial_com/clean: serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+serial_com/clean: serial_com/CMakeFiles/serial_node_decision.dir/clean
 serial_com/clean: serial_com/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 serial_com/clean: serial_com/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 serial_com/clean: serial_com/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
@@ -498,43 +498,6 @@ serial_com/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: serial_com/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target serial_com/CMakeFiles/serial_communication_node.dir
-
-# All Build rule for target.
-serial_com/CMakeFiles/serial_communication_node.dir/all:
-	$(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/depend
-	$(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build/CMakeFiles --progress-num=12,13 "Built target serial_communication_node"
-.PHONY : serial_com/CMakeFiles/serial_communication_node.dir/all
-
-# Include target in all.
-all: serial_com/CMakeFiles/serial_communication_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-serial_com/CMakeFiles/serial_communication_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 serial_com/CMakeFiles/serial_communication_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build/CMakeFiles 0
-.PHONY : serial_com/CMakeFiles/serial_communication_node.dir/rule
-
-# Convenience name for target.
-serial_communication_node: serial_com/CMakeFiles/serial_communication_node.dir/rule
-
-.PHONY : serial_communication_node
-
-# clean rule for target.
-serial_com/CMakeFiles/serial_communication_node.dir/clean:
-	$(MAKE) -f serial_com/CMakeFiles/serial_communication_node.dir/build.make serial_com/CMakeFiles/serial_communication_node.dir/clean
-.PHONY : serial_com/CMakeFiles/serial_communication_node.dir/clean
-
-# clean rule for target.
-clean: serial_com/CMakeFiles/serial_communication_node.dir/clean
 
 .PHONY : clean
 
@@ -727,6 +690,43 @@ serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: serial_com/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target serial_com/CMakeFiles/serial_node_decision.dir
+
+# All Build rule for target.
+serial_com/CMakeFiles/serial_node_decision.dir/all:
+	$(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/depend
+	$(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build/CMakeFiles --progress-num=12,13 "Built target serial_node_decision"
+.PHONY : serial_com/CMakeFiles/serial_node_decision.dir/all
+
+# Include target in all.
+all: serial_com/CMakeFiles/serial_node_decision.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+serial_com/CMakeFiles/serial_node_decision.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 serial_com/CMakeFiles/serial_node_decision.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu-sml-stj/SerialCom_Ros/Workspace/build/CMakeFiles 0
+.PHONY : serial_com/CMakeFiles/serial_node_decision.dir/rule
+
+# Convenience name for target.
+serial_node_decision: serial_com/CMakeFiles/serial_node_decision.dir/rule
+
+.PHONY : serial_node_decision
+
+# clean rule for target.
+serial_com/CMakeFiles/serial_node_decision.dir/clean:
+	$(MAKE) -f serial_com/CMakeFiles/serial_node_decision.dir/build.make serial_com/CMakeFiles/serial_node_decision.dir/clean
+.PHONY : serial_com/CMakeFiles/serial_node_decision.dir/clean
+
+# clean rule for target.
+clean: serial_com/CMakeFiles/serial_node_decision.dir/clean
 
 .PHONY : clean
 

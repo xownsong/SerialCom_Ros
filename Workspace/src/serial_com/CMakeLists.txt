@@ -17,9 +17,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(serial_communication_node src/serial_communication_node.cpp)
+add_executable(serial_node_decision src/serial_node_decision.cpp)
 
-target_link_libraries(serial_communication_node
+target_link_libraries(serial_node_decision
   ${catkin_LIBRARIES}
 )
 
